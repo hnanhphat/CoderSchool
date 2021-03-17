@@ -1,4 +1,4 @@
-::root {
+* {
   box-sizing: border-box;
 }
 
@@ -65,50 +65,48 @@ nav p {
 }
 
 /* Challenge 01 */
-#challenge-01 .square-02 {
-  position: absolute;
-  top: 0;
-  right: 90px;
+#challenge-01 .content,
+#challenge-01 .box {
+  display: flex;
+  justify-content: space-between;
 }
-
-#challenge-01 .square-03 {
-  position: absolute;
-  top: 0;
-  right: 0;
+#challenge-01 .square-02 {
+  margin-right: 5px;
 }
 
 /* Challenge 02 */
-#challenge-02 .square-02 {
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
+#challenge-02 .content {
+  display: flex;
+  flex-direction: column;
 }
-
+#challenge-02 .square-02 {
+  align-self: center;
+}
 #challenge-02 .square-03 {
-  position: absolute;
-  bottom: 120px;
-  right: 0;
+  align-self: flex-end;
 }
 
 /* Challenge 03 */
 #challenge-03 .content {
-  padding: 10px;
+  padding: 40px;
 }
 
 #challenge-03 .square-01 {
   background: darkgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 160px;
   height: 160px;
   margin: 0 auto;
   position: relative;
 }
 
-#challenge-03 .square-02 {
+#challenge-03 p {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  margin: 0;
 }
 
 /* Challenge 04 */
@@ -126,21 +124,15 @@ nav p {
 }
 
 /* Challenge 05 */
+#challenge-05 .content {
+  display: flex;
+  flex-direction: column;
+}
 #challenge-05 .square-01 {
-  position: absolute;
-  top: 0;
-  right: 0;
+  align-self: flex-end;
 }
 #challenge-05 .square-02 {
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-#challenge-05 .square-03 {
-  position: absolute;
-  bottom: 120px;
-  left: 0;
+  align-self: center;
 }
 
 /* Challenge 06 */
@@ -192,42 +184,37 @@ nav p {
 /* Challenge 09 */
 #challenge-09 .square-01 {
   background: darkgray;
-  position: relative;
-  width: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 160px;
   height: 240px;
+  position: relative;
 }
-#challenge-09 .square-02 {
+#challenge-09 p {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-#challenge-09 .square-03 {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  margin: 0;
 }
 
 /* Challenge 10 */
 #challenge-10 .square-01 {
   background: darkgray;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   width: 240px;
   height: 140px;
   margin: 20px auto;
+  position: relative;
 }
-#challenge-10 .square-02 {
+#challenge-10 p {
   position: absolute;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-}
-#challenge-10 .square-03 {
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
+  top: 0;
+  left: 0;
+  margin: 0;
 }
 
 /* Challenge 11 */
@@ -321,7 +308,7 @@ nav p {
 #challenge-15 .square-01,
 #challenge-15 .square-04 {
   background: darkgray;
-  width: 160px;
+  width: 34%;
   height: 160px;
 }
 #challenge-15 .square-01 {
@@ -330,7 +317,7 @@ nav p {
 #challenge-15 .square-02 {
   position: absolute;
   top: 0;
-  right: 140px;
+  right: 25%;
 }
 #challenge-15 .square-03 {
   position: absolute;
@@ -340,7 +327,7 @@ nav p {
 #challenge-15 .square-04 {
   position: absolute;
   bottom: 20px;
-  right: 140px;
+  right: 25%;
 }
 
 /* Challenge 16 */
