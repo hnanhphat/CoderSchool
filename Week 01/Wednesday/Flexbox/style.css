@@ -1,3 +1,17 @@
+:root {
+  --border: #818285;
+
+  --red: #eb6a5e;
+  --yellow: #f4bd4f;
+  --green: #64c253;
+
+  --black: #000;
+  --white: #fff;
+
+  --grey: #a7a9ac;
+  --dark-grey: #3a3a3c;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -13,8 +27,8 @@ body {
 }
 
 .window {
-  background: grey;
-  border: 1px solid grey;
+  background: var(--border);
+  border: 1px solid var(--border);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 2px;
@@ -29,7 +43,7 @@ nav {
 }
 
 nav p {
-  color: white;
+  color: var(--white);
   font-size: 0.8em;
 }
 
@@ -41,25 +55,25 @@ nav p {
 }
 
 .circle-1 {
-  background: red;
+  background: var(--red);
 }
 .circle-2 {
-  background: yellow;
+  background: var(--yellow);
 }
 .circle-3 {
-  background: green;
+  background: var(--green);
 }
 
 .content {
-  background: white;
+  background: var(--white);
   display: flex;
   height: 300px;
   position: relative;
 }
 
 .square {
-  background: black;
-  color: white;
+  background: var(--black);
+  color: var(--white);
   width: 80px;
   height: 80px;
 }
@@ -92,7 +106,7 @@ nav p {
 }
 
 #challenge-03 .square-01 {
-  background: darkgray;
+  background: var(--dark-grey);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,7 +131,7 @@ nav p {
 }
 
 #challenge-04 .square-02 {
-  background: darkgray;
+  background: var(--dark-grey);
   position: absolute;
   top: 30px;
   left: 30px;
@@ -137,7 +151,7 @@ nav p {
 
 /* Challenge 06 */
 #challenge-06 .square-01 {
-  background: darkgray;
+  background: var(--dark-grey);
   position: absolute;
   width: 70%;
   height: 140px;
@@ -157,7 +171,7 @@ nav p {
 
 /* Challenge 07 */
 #challenge-07 .square-01 {
-  background: darkgray;
+  background: var(--dark-grey);
   position: relative;
   width: 160px;
   height: 160px;
@@ -170,7 +184,7 @@ nav p {
 
 /* Challenge 08 */
 #challenge-08 .square-01 {
-  background: darkgray;
+  background: var(--dark-grey);
   position: relative;
   width: 160px;
   height: 160px;
@@ -183,7 +197,7 @@ nav p {
 
 /* Challenge 09 */
 #challenge-09 .square-01 {
-  background: darkgray;
+  background: var(--dark-grey);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -201,7 +215,7 @@ nav p {
 
 /* Challenge 10 */
 #challenge-10 .square-01 {
-  background: darkgray;
+  background: var(--dark-grey);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -219,7 +233,7 @@ nav p {
 
 /* Challenge 11 */
 #challenge-11 .square-01 {
-  background: darkgray;
+  background: var(--dark-grey);
   width: 240px;
   height: 80%;
   position: relative;
@@ -232,7 +246,7 @@ nav p {
   right: 0;
 }
 #challenge-11 .square-03 {
-  background: grey;
+  background: var(--grey);
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -240,7 +254,7 @@ nav p {
 
 /* Challenge 12 */
 #challenge-12 .square-01 {
-  background: darkgray;
+  background: var(--dark-grey);
   width: 240px;
   height: 80%;
 }
@@ -253,7 +267,7 @@ nav p {
 }
 #challenge-12 .square-03 {
   position: absolute;
-  background: grey;
+  background: var(--grey);
   width: 120px;
   height: 120px;
   bottom: 40px;
@@ -267,7 +281,7 @@ nav p {
   left: 0;
 }
 #challenge-13 .square-02 {
-  background: grey;
+  background: var(--dark-grey);
   position: absolute;
   top: 30px;
   left: 30px;
@@ -278,7 +292,7 @@ nav p {
   left: 60px;
 }
 #challenge-13 .square-04 {
-  background: grey;
+  background: var(--dark-grey);
   position: absolute;
   top: 90px;
   left: 90px;
@@ -291,7 +305,7 @@ nav p {
 
 /* Challenge 14 */
 #challenge-14 .square-01 {
-  background: darkgray;
+  background: var(--dark-grey);
   width: 240px;
   height: 240px;
   margin-left: auto;
@@ -307,7 +321,7 @@ nav p {
 /* Challenge 15 */
 #challenge-15 .square-01,
 #challenge-15 .square-04 {
-  background: darkgray;
+  background: var(--dark-grey);
   width: 34%;
   height: 160px;
 }
@@ -335,18 +349,18 @@ nav p {
   flex-wrap: wrap;
   align-content: space-between;
   justify-content: space-between;
+  height: 865px;
   padding: 20px;
 }
 
 #challenge-16 .bnr {
-  background: green;
+  background: url('https://mcdonalds.vn/uploads/2018/home/1170x300-GMALpx.jpg') right center/cover no-repeat;
   border-radius: 5px;
   width: 100%;
   height: calc(40% - 10px);
 }
 
 #challenge-16 .box {
-  background: skyblue;
   border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
@@ -356,12 +370,24 @@ nav p {
   height: calc(60% - 10px);
 }
 
+#challenge-16 .box-img {
+  background: url('https://mcdonalds.vn/uploads/2018/home/mccafe_desktop.jpg') center/cover no-repeat;
+}
+
 #challenge-16 .box-small {
   background: orange;
   height: calc(50% - 10px);
 }
 
+#challenge-16 .box-small:nth-child(1) {
+  background: url('https://mcdonalds.vn/uploads/2018/home/home-stories.jpg') center/cover no-repeat;
+}
+#challenge-16 .box-small:nth-child(2) {
+  background: url('https://mcdonalds.vn/uploads/2018/home/hr-pc.jpg') center/cover no-repeat;
+}
+
 #challenge-16 .bnr-small {
+  background: url('https://mcdonalds.vn/uploads/2018/home/home-banner-hamburger.jpg') right center/cover no-repeat;
   height: calc(50% - 10px);
 }
 
@@ -371,25 +397,52 @@ nav p {
   align-content: space-between;
   justify-content: space-between;
   padding: 20px;
+  height: auto;
 }
 
 #challenge-17 .box {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: calc(50% - 5px);
+}
+
+#challenge-17 .box-01 {
+  padding-bottom: 20px;
 }
 
 #challenge-17 .three {
-  background: purple;
+  border: 1px solid var(--grey);
   border-radius: 5px;
   width: calc(33.3333% - 10px);
   height: 100%;
+  text-align: center;
+}
+
+#challenge-17 .three img {
+  width: 100%;
+
 }
 
 #challenge-17 .four {
-  background: yellowgreen;
+  border: 1px solid var(--grey);
   border-radius: 5px;
   width: calc(25% - 10px);
   height: 100%;
+  text-align: center;
+}
+
+#challenge-17 .four img {
+  width: auto;
+  max-width: 100%;
+  height: 140px;
+}
+
+#challenge-17 p {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#challenge-17 .four p {
+  text-align: left;
+  padding: 10px;
 }
