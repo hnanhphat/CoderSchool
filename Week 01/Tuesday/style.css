@@ -1,0 +1,33 @@
+* {
+  
+}
+
+h1 {
+  color: aqua;
+  text-align: center;
+}
+
+#red {
+  color: red;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.text-center {
+  text-align: center;
+}
+
+body {
+  color: blue;
+}
+
+.test {
+  border: 1px solid;
+  color: orange;
+}
+
+.test:hover {
+  color: green;
+}

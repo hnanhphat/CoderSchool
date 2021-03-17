@@ -1,0 +1,408 @@
+::root {
+  box-sizing: border-box;
+}
+
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 30px 20vw;
+}
+
+.window {
+  background: grey;
+  border: 1px solid grey;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 2px;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  padding: 0 6px;
+}
+
+nav p {
+  color: white;
+  font-size: 0.8em;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+.circle-1 {
+  background: red;
+}
+.circle-2 {
+  background: yellow;
+}
+.circle-3 {
+  background: green;
+}
+
+.content {
+  background: white;
+  display: flex;
+  height: 300px;
+  position: relative;
+}
+
+.square {
+  background: black;
+  color: white;
+  width: 80px;
+  height: 80px;
+}
+
+/* Challenge 01 */
+#challenge-01 .square-02 {
+  position: absolute;
+  top: 0;
+  right: 90px;
+}
+
+#challenge-01 .square-03 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Challenge 02 */
+#challenge-02 .square-02 {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#challenge-02 .square-03 {
+  position: absolute;
+  bottom: 120px;
+  right: 0;
+}
+
+/* Challenge 03 */
+#challenge-03 .content {
+  padding: 10px;
+}
+
+#challenge-03 .square-01 {
+  background: darkgray;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#challenge-03 .square-02 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Challenge 04 */
+#challenge-04 .square-01 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#challenge-04 .square-02 {
+  background: darkgray;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+/* Challenge 05 */
+#challenge-05 .square-01 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#challenge-05 .square-02 {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#challenge-05 .square-03 {
+  position: absolute;
+  bottom: 120px;
+  left: 0;
+}
+
+/* Challenge 06 */
+#challenge-06 .square-01 {
+  background: darkgray;
+  position: absolute;
+  width: 70%;
+  height: 140px;
+  bottom: 0;
+  right: 0;
+}
+#challenge-06 .square-02 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#challenge-06 .square-03 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Challenge 07 */
+#challenge-07 .square-01 {
+  background: darkgray;
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+#challenge-07 .square-02 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* Challenge 08 */
+#challenge-08 .square-01 {
+  background: darkgray;
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+#challenge-08 .square-02 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Challenge 09 */
+#challenge-09 .square-01 {
+  background: darkgray;
+  position: relative;
+  width: 140px;
+  height: 240px;
+}
+#challenge-09 .square-02 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#challenge-09 .square-03 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Challenge 10 */
+#challenge-10 .square-01 {
+  background: darkgray;
+  position: relative;
+  width: 240px;
+  height: 140px;
+  margin: 20px auto;
+}
+#challenge-10 .square-02 {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+#challenge-10 .square-03 {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+/* Challenge 11 */
+#challenge-11 .square-01 {
+  background: darkgray;
+  width: 240px;
+  height: 80%;
+  position: relative;
+}
+#challenge-11 .square-02 {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  bottom: 0;
+  right: 0;
+}
+#challenge-11 .square-03 {
+  background: grey;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* Challenge 12 */
+#challenge-12 .square-01 {
+  background: darkgray;
+  width: 240px;
+  height: 80%;
+}
+#challenge-12 .square-02 {
+  position: absolute;
+  width: 160px;
+  height: 180px;
+  bottom: 80px;
+  left: 180px;
+}
+#challenge-12 .square-03 {
+  position: absolute;
+  background: grey;
+  width: 120px;
+  height: 120px;
+  bottom: 40px;
+  left: 140px;
+}
+
+/* Challenge 13 */
+#challenge-13 .square-01 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#challenge-13 .square-02 {
+  background: grey;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+#challenge-13 .square-03 {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+}
+#challenge-13 .square-04 {
+  background: grey;
+  position: absolute;
+  top: 90px;
+  left: 90px;
+}
+#challenge-13 .square-05 {
+  position: absolute;
+  top: 120px;
+  left: 120px;
+}
+
+/* Challenge 14 */
+#challenge-14 .square-01 {
+  background: darkgray;
+  width: 240px;
+  height: 240px;
+  margin-left: auto;
+  position: relative;
+}
+
+#challenge-14 .square-02 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Challenge 15 */
+#challenge-15 .square-01,
+#challenge-15 .square-04 {
+  background: darkgray;
+  width: 160px;
+  height: 160px;
+}
+#challenge-15 .square-01 {
+  position: absolute;
+}
+#challenge-15 .square-02 {
+  position: absolute;
+  top: 0;
+  right: 140px;
+}
+#challenge-15 .square-03 {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
+#challenge-15 .square-04 {
+  position: absolute;
+  bottom: 20px;
+  right: 140px;
+}
+
+/* Challenge 16 */
+#challenge-16 .content {
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#challenge-16 .bnr {
+  background: green;
+  border-radius: 5px;
+  width: 100%;
+  height: calc(40% - 10px);
+}
+
+#challenge-16 .box {
+  background: skyblue;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  width: calc(50% - 10px);
+  height: calc(60% - 10px);
+}
+
+#challenge-16 .box-small {
+  background: orange;
+  height: calc(50% - 10px);
+}
+
+#challenge-16 .bnr-small {
+  height: calc(50% - 10px);
+}
+
+/* Challenge 17 */
+#challenge-17 .content {
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#challenge-17 .box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: calc(50% - 5px);
+}
+
+#challenge-17 .three {
+  background: purple;
+  border-radius: 5px;
+  width: calc(33.3333% - 10px);
+  height: 100%;
+}
+
+#challenge-17 .four {
+  background: yellowgreen;
+  border-radius: 5px;
+  width: calc(25% - 10px);
+  height: 100%;
+}
